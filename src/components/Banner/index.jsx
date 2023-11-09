@@ -7,19 +7,22 @@ export default function Banner() {
     <div className={styles.banner}>
       <div className={styles.apresentacao}>
         <h1 className={styles.titulo}>ola mundo banner</h1>
+
         <p className={styles.paragrafo}>bem vindo ao meu site broooooo</p>
-        <div className={styles.imagens}>
-          <img
-            className={styles.circuloColorido}
-            src={circuloColorido}
-            aria-hidden={true}
-          />
-          <img
-            className={styles.minhaFoto}
-            src={minhaFoto}
-            aria-hidden={"foto do professor"}
-          />
-        </div>
+      </div>
+
+      <div className={styles.imagens}>
+        <img
+          className={styles.circuloColorido}
+          src={circuloColorido}
+          aria-hidden={true}
+        />
+
+        <img
+          className={styles.minhaFoto}
+          src={minhaFoto}
+          aria-hidden={"foto do professor"}
+        />
       </div>
     </div>
   );
