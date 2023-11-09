@@ -1,10 +1,9 @@
+import { BrowserRouter } from "react-router-dom";
 import AboutMe from "./pages/about-me";
 import Home from "./pages/home";
 
-const page = window.location.pathname === "/" ? <Home /> : <AboutMe />;
-
 function App() {
-  return page;
+  return <BrowserRouter></BrowserRouter>;
 }
 
 export default App;
