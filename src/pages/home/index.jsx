@@ -1,3 +1,10 @@
+import Banner from "components/Banner";
+
 export default function Home() {
-  return <h1>Oie mundao</h1>;
+  return (
+    <main>
+      <Banner />
+      <h1>Oie mundao</h1>;
+    </main>
+  );
 }
