@@ -6,7 +6,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route />
+        <Route path="/" element={<Home />} />
+        <Route path="/sobremim" element={<AboutMe />} />
+        <Route path="*" element={<div>404 pagina nao encontrada</div>} />
       </Routes>
     </BrowserRouter>
   );
