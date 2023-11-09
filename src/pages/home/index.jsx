@@ -7,7 +7,6 @@ import Post from "components/Post";
 export default function Home() {
   return (
     <main>
-      <Banner />
       <ul className={styles.posts}>
         {posts.map((post) => (
           <li key={post.id}>
