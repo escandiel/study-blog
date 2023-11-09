@@ -1,12 +1,10 @@
-const pagina =
-  window.location.pathname === "/" ? (
-    <div>Hello World</div>
-  ) : (
-    <div>Ola mundo</div>
-  );
+import AboutMe from "./pages/about-me";
+import Home from "./pages/home";
+
+const page = window.location.pathname === "/" ? <Home /> : <AboutMe />;
 
 function App() {
-  return pagina;
+  return page;
 }
 
 export default App;
