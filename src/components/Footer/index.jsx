@@ -1,5 +1,11 @@
 import styles from "./Footer.module.css";
+import { ReactComponent as MarcaRegistrada } from "assets/marca_registrada.svg";
 
 export default function Footer() {
-  return "rodape";
+  return (
+    <footer className={styles.footer}>
+      <MarcaRegistrada />
+      Desenvolvido por Victor Escandiel
+    </footer>
+  );
 }
