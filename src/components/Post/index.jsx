@@ -8,6 +8,8 @@ export default function Post({ post }) {
         src={`/assets/posts/${post.id}/capa.png`}
         alt="Imagem de capa do post"
       />
+      <h2 className={styles.titulo}>{post.titulo}</h2>
+      <buttona className={styles.botaoLer}>Ler</buttona>
     </div>
   );
 }
