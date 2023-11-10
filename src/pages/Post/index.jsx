@@ -1,6 +1,9 @@
+import "./Post.css";
+
 import { useParams } from "react-router-dom";
 import posts from "json/posts.json";
 import ModelPost from "components/ModelPost";
+import ReactMarkdown from "react-markdown";
 
 export default function Post() {
   const params = useParams();
@@ -8,12 +11,18 @@ export default function Post() {
     return post.id === Number(params.id);
   });
 
-  console.log(post);
+  if (!post) {
+    return <h1>Post nao existe mané !</h1>;
+  }
 
   return (
     <ModelPost
       fotoCapa={`/assets/posts/${post.id}/capa.png`}
       titulo={post.titulo}
-    ></ModelPost>
+    >
+      <div className="post-markdown-container">
+        <ReactMarkdown>{post.texto}</ReactMarkdown>
+      </div>
+    </ModelPost>
   );
 }
