@@ -1,8 +1,19 @@
 import { useParams } from "react-router-dom";
+import posts from "json/posts.json";
+import ModelPost from "components/ModelPost";
 
 export default function Post() {
   const params = useParams();
-  console.log(params);
+  const post = posts.find((post) => {
+    return post.id === Number(params.id);
+  });
 
-  return <h1>post {params.id}</h1>;
+  console.log(post);
+
+  return (
+    <ModelPost
+      fotoCapa={`/assets/posts/${post.id}/capa.png`}
+      titulo={post.titulo}
+    ></ModelPost>
+  );
 }
