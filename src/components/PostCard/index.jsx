@@ -1,6 +1,6 @@
 import styles from "./Post.module.css";
 
-export default function Post({ post }) {
+export default function PostCard({ post }) {
   return (
     <div className={styles.post}>
       <img
@@ -9,7 +9,7 @@ export default function Post({ post }) {
         alt="Imagem de capa do post"
       />
       <h2 className={styles.titulo}>{post.titulo}</h2>
-      <buttona className={styles.botaoLer}>Ler</buttona>
+      <button className={styles.botaoLer}>Ler</button>
     </div>
   );
 }

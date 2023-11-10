@@ -2,7 +2,7 @@ import Banner from "components/Banner";
 import styles from "./Home.module.css";
 
 import posts from "json/posts.json";
-import Post from "components/Post";
+import Post from "components/PostCard";
 
 export default function Home() {
   return (
