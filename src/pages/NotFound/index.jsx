@@ -21,7 +21,7 @@ export default function NotFound() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
           obcaecati laboriosam sequi ad explicabo consequatur rem facilis
         </p>
-        <div className={styles.botaoContainer} onClick={() => navigate("/")}>
+        <div className={styles.botaoContainer} onClick={() => navigate(-1)}>
           <ButtonMain size="lg">Voltar</ButtonMain>
         </div>
         <img
