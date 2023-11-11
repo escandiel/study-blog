@@ -1,8 +1,11 @@
 import ButtonMain from "components/ButtonMain";
 import styles from "./NotFound.module.css";
 import erro404 from "assets/erro_404.png";
+import { useNavigate } from "react-router-dom";
 
 export default function NotFound() {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className={styles.conteudoContainer}>
@@ -18,7 +21,7 @@ export default function NotFound() {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
           obcaecati laboriosam sequi ad explicabo consequatur rem facilis
         </p>
-        <div className={styles.botaoContainer}>
+        <div className={styles.botaoContainer} onClick={() => navigate("/")}>
           <ButtonMain size="lg">Voltar</ButtonMain>
         </div>
         <img
