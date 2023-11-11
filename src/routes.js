@@ -15,27 +15,9 @@ function AppRoutes() {
         <Route path="/" element={<PageDefault />}>
           <Route index element={<Home />} />
           <Route path="sobremim" element={<AboutMe />} />
-          <Route path="posts/:id" element={<Post />} />
         </Route>
 
-        {/* 
-          Na rota '/',, a estrutura a ser renderizada é: 
-
-          <PageDefault>
-          <Home/>
-          </PageDefault>
-
-          ////////////////////
-
-          Na rota '/AboutMe',, a estrurua a ser renderizada é: 
-
-          <PageDefault>
-          <AboutMe/>
-          </PageDefault>
-
-
-
-         */}
+        <Route path="posts/:id" element={<Post />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
